@@ -2,10 +2,7 @@
 const mongoose=require("mongoose");
 const bookSchema=require('./Book.model');
 
-//title
-//description
-//status
-//email
+
 const authorSchema= new mongoose.Schema({
     name:String,
     books:[bookSchema],
@@ -43,3 +40,4 @@ let seedAuthor=()=>{
 }
 module.exports=seedAuthor;
 module.exports=AuthorModel;
+// module.exports=authorSchema;
